@@ -1,0 +1,9 @@
+# Create a requirements.txt file
+echo "Django>=4.2.0
+# Add other dependencies your project uses
+" > requirements.txt
+
+# Add and commit the file
+git add requirements.txt
+git commit -m "Add requirements.txt"
+git push
