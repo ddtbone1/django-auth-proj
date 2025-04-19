@@ -1,26 +1,46 @@
-# Create a README.md file
-echo "# Django Authentication Project
+# Django Authentication Project (PinkAuth)
 
-A complete user authentication system built with Django, featuring registration, login, and a user dashboard.
+This is a Django-based user authentication system with user registration, login, logout, and a protected dashboard. The UI is styled using Bootstrap 5 with a modern pink theme, centered forms, and mobile responsiveness.
 
 ## Features
 
-- User registration with email, username, and password
-- Login functionality with Django's built-in authentication
-- User dashboard displaying profile information
-- Logout functionality
-- Password hashing and security measures
-- CSRF protection
+- User registration with password validation  
+- Login and logout functionality  
+- Authenticated dashboard view  
+- Clean, centered iOS-style form layout  
+- CSRF protection and secure password hashing (default in Django)
 
-## Setup Instructions
+## How to Set Up and Run the Project
 
-1. Clone the repository
-2. Install dependencies
-3. Run migrations
-4. Start the development server
-" > README.md
+### 1. Clone the Repository
 
-# Add and commit the README
-git add README.md
-git commit -m "Add README.md"
-git push
+```bash
+git clone https://github.com/ddtbone1/django-auth-proj.git
+cd django-auth-proj
+
+### 2. Create and Activate a Virtual Environment
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+
+### 3. Install Dependencies
+
+```bash
+pip install django
+
+### 4. Run Migrations
+
+```bash
+python manage.py migrate
+
+### 5. Create a Superuser
+
+```bash
+python manage.py createsuperuser
+
+### 6. Run the Development Server
+
+```bash
+
+python manage.py runserver
